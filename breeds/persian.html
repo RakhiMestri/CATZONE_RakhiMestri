@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <title>Document</title>
+    <style> 
+ figure{ 
+                width: 100%;   
+                height: 100%;          
+               text-align: center;
+               display: block;
+            }
+            #imgfig>figure>img {
+        width: 70%;
+        height: 70%;
+    }
+    header{
+        height: 65px;
+    } 
+            
+            @media screen and (max-width: 600px){
+                .topnav a{
+                    float: none;
+                    width: 100%;
+                }
+            }
+          
+           
+            #imgfig{
+                display: flex;
+            }
+           #imgfig img{
+            border-radius: 50%;
+           }
+           
+           #steps{
+            /* width: 300px; */
+            height: 100px;
+            border: 1px solid f24572;
+            padding: 50px;
+            margin: 20px;
+            display: inline-flex;
+            font-size: 18px;
+           }
+           #logo{
+            float: left;
+            margin-left: 15px;
+           }
+           #logoname{
+            color: #f24572;
+           }
+           body{
+            margin: 0px;
+           }
+           @media(max-width:700px){
+            .main{
+                text-align: center;
+            }
+            .index{
+                flex-direction: column;
+            }
+            nav ul{
+                flex-direction: column;
+                
+            }
+           }
+       
+
+            header, nav, ul{
+                display: flex;
+            }
+            nav{
+                margin-left: 2em;
+            }
+            ul{
+                list-style: none;
+            }
+            nav>ul>li{
+                /* margin: 0.8em; */
+                font-size: 30px;
+                padding:14px 70px ;
+            }
+
+           
+            #topDiv{
+                height: 20px;
+                width: 100%;
+                background-color: #f24572;
+                text-align: center;
+                color: white;
+            }
+            #footDiv{
+                height: 50px;
+                width: 100%;
+                text-align: center;
+                font-size: 25px;
+            }
+              figure{
+              height: 100%;
+              width: 100%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            } 
+             figure>img{
+                height: 30%;
+                width: 30%;
+                text-align: center;
+                margin-bottom: 40px;
+            } 
+           h1{
+            font-size: 30px;
+            text-align: center;
+            color: #3a3a93;
+           }
+           figcaption>b{
+            font-size: 30px;
+           }
+           .breed-list{
+                display: none;
+                 flex-direction: column; 
+                 width: 60px; 
+                background: #fff;
+                z-index: 999;
+                position: relative;
+                border: 1px solid;
+                left: -18px;
+            }
+            #breeds:hover .breed-list{
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+</head>
+<body>
+    <div id="topDiv">
+            CATZONE
+    </div>
+<header>
+    <img src="../Images/logo.webp" alt="" width="100" height="100">   
+    <nav>
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li id="breeds">Breeds<a href="#"></a>
+                <ul class="breed-list"> 
+                    <li><a href="persian.html">Persian</a></li>
+                    <li><a href="bengal.html">Bengal</a></li>
+                    <li><a href="spannish.html">Spannish</a></li>
+                    <li><a href="ragdoll.html">Rangdoll</a></li>
+                    <li><a href="britishshorthair.html">British Shorthair</a></li>
+                </ul>
+            </li>
+            
+            <li>Contact Us<a href="#"></a></li>
+        </ul>
+    </nav>
+</header>
+<hr>
+   <section>
+    <div id="mainSec">
+      <h1>Persian Cat</h1>
+        <figure>
+            <img src="../Images/persian.webp" alt="PersianCat">
+            <figcaption>
+                <b>
+                    Your Search for a Loving Persian Kitten Ends Here !
+                </b> 
+                <br>
+                <p>
+                    There are many cat loving people like you who want to find a healthy pure breed Persian Cat near you but are not able to connect with good ethical Persian Cat breeders and reliable online platforms.
+                </p>
+                <p>
+                    CATZONE is India’s most trusted online cat marketplace. Our team of dedicated cat experts is available to answer all your questions and help you find the best Persian kittens available nationwide- so that you can sit back relax and wait for your furry friend to come home.
+                </p>
+                <p>
+                    There are a lot reasons why this kitty is known as the glamorous cat of the pet world. Breeders and cat lovers across the globe prefer Persians over other breeds.
+                </p>
+            </figcaption>
+        </figure>
+        <br>
+        <hr width="50%" color="#f24572">
+       
+    </div>
+   </section>
+    <br>
+</body>
+<footer>
+    <section>
+        <div id="footDiv">
+            <h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2020 designed by W3schoolweb</h6>
+        </div>
+    </section>
+
+    <!-- <section>
+      <div>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="linkedin"></a>
+        <a href="#" class="facebook"></a>
+        <a href="#" class="skype"></a>
+        <a href="#" class="flickr"></a>
+        <h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2020 designed by W3schoolweb</h6>
+      </div>
+    </section> -->
+  </footer>
+</html>

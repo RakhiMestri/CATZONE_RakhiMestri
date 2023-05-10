@@ -16,7 +16,10 @@
         width: 70%;
         height: 70%;
     }
-            
+    header{
+        height: 65px;
+    }   
+    
             @media screen and (max-width: 600px){
                 .topnav a{
                     float: none;
@@ -125,6 +128,20 @@
                 text-align: center;
                 font-size: 25px;
             }
+            .breed-list{
+                display: none;
+                 flex-direction: column; 
+                 width: 60px; 
+                background: #fff;
+                z-index: 999;
+                position: relative;
+                border: 1px solid;
+                left: -18px;
+            }
+            #breeds:hover .breed-list{
+                display: flex;
+                flex-direction: column;
+            }
         </style>
 </head>
 <body>
@@ -135,8 +152,17 @@
     <img src="Images/logo.webp" alt="" width="100" height="100">   
     <nav>
         <ul>
-            <li> Home<a href="#"></a></li>
-            <li>Breeds<a href="#"></a></li>
+            <li> Home<a href="index.html"></a></li>
+            <li id="breeds">Breeds<a href="#"></a>
+                <ul class="breed-list"> 
+                    <li><a href="breeds/persian.html">Persian</a></li>
+                    <li><a href="breeds/bengal.html">Bengal</a></li>
+                    <li><a href="breeds/spannish.html">Spannish</a></li>
+                    <li><a href="breeds/ragdoll.html">Rangdoll</a></li>
+                    <li><a href="breeds/britishshorthair.html">British Shorthair</a></li>
+                </ul>
+            </li>
+            
             <li>Contact Us<a href="#"></a></li>
         </ul>
     </nav>
@@ -159,19 +185,20 @@
             <figure>
                 <img src="Images/persian.webp" alt="Persian Cat">
                 <figcaption>                   
-                    <a href="breed.html">PERSIAN CAT</a>
+                    <a href="breeds/persian.html">PERSIAN CAT</a>
                 </figcaption>
                
             </figure>
             <figure>
                 <img src="Images/Bengal.jpg" alt="Bengal Cat" >
                 <figcaption>
-                    <a href="breed.html"> BENGAL CAT</a>
+                    <a href="breeds/bengal.html"> BENGAL CAT</a>
                    
                 </figcaption>
             </figure>
             <figure>
                 <img src="Images/persian.webp" alt="Persian Cat" >
+
                 <figcaption>
                     <a href="breed.html"> SPANNISH CAT</a>
                 
@@ -180,14 +207,14 @@
             <figure>
                 <img src="Images/persian.webp" alt="Persian Cat">
                 <figcaption>
-                    <a href="breed.html"> SHORTHAIR CAT</a>
+                    <a href="breed.html"> Rangdoll CAT</a>
                   
                 </figcaption>
             </figure>
             <figure>
                 <img src="Images/persian.webp" alt="Persian Cat" >
                 <figcaption>
-                    <a href="breed.html"> PERSIAN CAT</a>
+                    <a href="breed.html"> British Shorthair CAT</a>
                    
                 </figcaption>
             </figure>
