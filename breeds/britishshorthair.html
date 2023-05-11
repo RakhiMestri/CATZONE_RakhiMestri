@@ -77,13 +77,7 @@
             ul{
                 list-style: none;
             }
-            nav>ul>li{
-                /* margin: 0.8em; */
-                font-size: 30px;
-                padding:14px 70px ;
-            }
-
-           
+            
             #topDiv{
                 height: 20px;
                 width: 100%;
@@ -117,19 +111,28 @@
            figcaption>b{
             font-size: 30px;
            }
+           nav>ul>li{
+                /* margin: 0.8em; */
+                font-size: 23px;
+                padding:14px 70px ;
+            }
            .breed-list{
                 display: none;
                  flex-direction: column; 
                  width: 60px; 
                 background: #fff;
-                z-index: 999;
+                 z-index: 999; 
                 position: relative;
-                border: 1px solid;
                 left: -18px;
             }
             #breeds:hover .breed-list{
                 display: flex;
                 flex-direction: column;
+            }
+            .breed-list>li{
+                padding: 10px;
+                margin-left: -38px;
+                font-size: 20px;
             }
         </style>
 </head>

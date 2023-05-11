@@ -35,7 +35,7 @@
                 font-family: cursive;
                 height: 35px;
                 border: 1px solid white;
-                color: #3a3a93;
+                /* color: #3a3a93; */
             }
            
             #imgfig{
@@ -102,11 +102,7 @@
                 list-style: none;
                 /* text-decoration: none; */
             }
-            nav>ul>li{
-                /* margin: 0.8em; */
-                font-size: 30px;
-                padding:14px 70px ;
-            }
+            
 
             #steps>figure{
                 
@@ -128,19 +124,33 @@
                 text-align: center;
                 font-size: 25px;
             }
+            nav>ul>li{
+                /* margin: 0.8em; */
+                font-size: 23px;
+                padding:14px 70px ;
+               
+            }
             .breed-list{
                 display: none;
                  flex-direction: column; 
                  width: 60px; 
                 background: #fff;
-                z-index: 999;
+                 z-index: 999; 
                 position: relative;
-                border: 1px solid;
                 left: -18px;
             }
             #breeds:hover .breed-list{
                 display: flex;
                 flex-direction: column;
+            }
+            .breed-list>li{
+                padding: 10px;
+                margin-left: -38px;
+                font-size: 20px;
+            }
+            .styl{
+                text-decoration: none;
+                color: black;
             }
         </style>
 </head>
@@ -158,12 +168,12 @@
                     <li><a href="breeds/persian.html">Persian</a></li>
                     <li><a href="breeds/bengal.html">Bengal</a></li>
                     <li><a href="breeds/spannish.html">Spannish</a></li>
-                    <li><a href="breeds/ragdoll.html">Rangdoll</a></li>
-                    <li><a href="breeds/britishshorthair.html">British Shorthair</a></li>
+                    <li><a href="breeds/ragdoll.html">Ragdoll</a></li>
+                    <li><a href="breeds/britishshorthair.html">Shorthair</a></li>
                 </ul>
             </li>
-            
-            <li>Contact Us<a href="#"></a></li>
+            <li><a class="styl" href="contactus.html">Contact Us</a></li>
+           
         </ul>
     </nav>
 </header>
@@ -197,24 +207,24 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="Images/persian.webp" alt="Persian Cat" >
+                <img src="Images/siamese-960x960-1.jpeg" alt="Spannish Cat" >
 
                 <figcaption>
-                    <a href="breed.html"> SPANNISH CAT</a>
+                    <a href="breeds/spannish.html"> SPANNISH CAT</a>
                 
                 </figcaption>
             </figure>
             <figure>
-                <img src="Images/persian.webp" alt="Persian Cat">
+                <img src="Images/Rag_doll.png" alt="Persian Cat">
                 <figcaption>
-                    <a href="breed.html"> Rangdoll CAT</a>
+                    <a href="breeds/ragdoll.html"> Rangdoll CAT</a>
                   
                 </figcaption>
             </figure>
             <figure>
-                <img src="Images/persian.webp" alt="Persian Cat" >
+                <img src="Images/Short_hairs.webp" alt="Persian Cat" >
                 <figcaption>
-                    <a href="breed.html"> British Shorthair CAT</a>
+                    <a href="breeds/britishshorthair.html"> British Shorthair CAT</a>
                    
                 </figcaption>
             </figure>
@@ -262,7 +272,7 @@
                 
         </div>
     </section>
-    
+   
 </body>
 <footer>
     <section>
@@ -270,15 +280,6 @@
             <h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2020 designed by W3schoolweb</h6>
         </div>
     </section>
-    <!-- <section>
-      <div>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="linkedin"></a>
-        <a href="#" class="facebook"></a>
-        <a href="#" class="skype"></a>
-        <a href="#" class="flickr"></a>
-        <h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2020 designed by W3schoolweb</h6>
-      </div>
-    </section> -->
+    
   </footer>
 </html>

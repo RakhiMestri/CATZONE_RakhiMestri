@@ -76,7 +76,7 @@
             }
             ul{
                 list-style: none;
-            }
+            }        
             #topDiv{
                 height: 20px;
                 width: 100%;
@@ -102,11 +102,7 @@
                 text-align: center;
                 margin-bottom: 40px;
             } 
-           h1{
-            font-size: 30px;
-            text-align: center;
-            color: #3a3a93;
-           }
+          
            figcaption>b{
             font-size: 30px;
            }
@@ -133,58 +129,89 @@
                 margin-left: -38px;
                 font-size: 20px;
             }
+            .centersec{
+                padding: 50px;
+                text-align: center;
+                border: #3a3a93 5px solid;
+                margin: 100px171px;
+                margin: 0px 270px;
+                box-shadow: 10px;
+            }
+            #submitbtn{
+                width: 150px;
+                background-color: #f24572;
+                text-align: center;
+                transition-duration: 0.4s;
+                text-decoration: none;
+                overflow: hidden;
+                cursor: pointer;
+            }
+           
         </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
 </head>
 <body>
     <div id="topDiv">
-            CATZONE
-    </div>
+        CATZONE
+</div>
 <header>
-    <img src="../Images/logo.webp" alt="" width="100" height="100">   
-    <nav>
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li id="breeds">Breeds<a href="#"></a>
-                <ul class="breed-list"> 
-                    <li><a href="persian.html">Persian</a></li>
-                    <li><a href="bengal.html">Bengal</a></li>
-                    <li><a href="spannish.html">Spannish</a></li>
-                    <li><a href="ragdoll.html">Rangdoll</a></li>
-                    <li><a href="britishshorthair.html">British Shorthair</a></li>
-                </ul>
-            </li>
-             <li><a href="">Contact Us</a></li>
-        </ul>
-    </nav>
+<img src="Images/logo.webp" alt="" width="100" height="100">   
+<nav>
+    <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li id="breeds">Breeds<a href="#"></a>
+            <ul class="breed-list"> 
+                <li><a href="persian.html">Persian</a></li>
+                <li><a href="bengal.html">Bengal</a></li>
+                <li><a href="spannish.html">Spannish</a></li>
+                <li><a href="ragdoll.html">Rangdoll</a></li>
+                <li><a href="britishshorthair.html">British Shorthair</a></li>
+            </ul>
+        </li>
+        
+        <li>Contact Us<a href="#"></a></li>
+    </ul>
+</nav>
 </header>
 <hr>
-   <section>
-    <div id="mainSec">
-      <h1>Bengal Cat</h1>
-        <figure>
-            <img src="../Images/bengal-cat.jpeg" alt="BengalCat">
-            <figcaption>
-                <b>
-                    Your Search for a Loving Bengal Kitten Ends Here !
-                </b> 
-                <br>
-                <p>
-                    There are many cat loving people like you who want to find a healthy pure breed Bengal Cat near you but are not able to connect with good ethical Persian Cat breeders and reliable online platforms.
-                </p>
-                <p>
-                    CATZONE is India’s most trusted online cat marketplace. Our team of dedicated cat experts is available to answer all your questions and help you find the best Persian kittens available nationwide- so that you can sit back relax and wait for your furry friend to come home.
-                </p>
-                <p>
-                    There are a lot reasons why this kitty is known as the glamorous cat of the pet world. Breeders and cat lovers across the globe prefer Persians over other breeds.
-                </p>
-            </figcaption>
-        </figure>
-        <br>
-        <hr width="50%" color="#f24572">
-       
-    </div>
-   </section>
-    <br>
+<br>
+<br>
+    <div class="container">
+        <section class="centersec">
+            <h3>Contact Form</h3>
+            <form action="contactus.html" onsubmit="ShowAlert()">
+               <div class="form-group">
+                        <div class=" input-group">
+                            <input type="text" id="fname" name="firstname" placeholder="Your Name" class="form-control">
+                        </div>
+                        <br>
+                        <div  class=" input-group">
+                        <input type="text" id="lname" name="lastname" placeholder="Your Contact Number"class="form-control">
+                        </div>
+                  <br>
+                    <div  class=" input-group">
+                        <input type="text" id="lname" name="lastname" placeholder="Your Email "class="form-control">
+                    </div>
+                    <br>
+                    <div  class=" input-group">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"class="form-control"></textarea>
+                    </div>
+                </div>
+               <br>
+            <div class="row">
+                <input type="submit" value="Send" id="submitbtn"> 
+            </div>
+            
+              </form>
+        </section> 
+      </div>
+      <script>
+
+        function ShowAlert(){
+            alert("Thank You...Your message send successfully to our team.");
+        }
+    
+        </script>
 </body>
 <footer>
     <section>
@@ -192,16 +219,5 @@
             <h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2020 designed by W3schoolweb</h6>
         </div>
     </section>
-
-    <!-- <section>
-      <div>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="linkedin"></a>
-        <a href="#" class="facebook"></a>
-        <a href="#" class="skype"></a>
-        <a href="#" class="flickr"></a>
-        <h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2020 designed by W3schoolweb</h6>
-      </div>
-    </section> -->
   </footer>
 </html>
