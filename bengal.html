@@ -16,18 +16,6 @@
         width: 70%;
         height: 70%;
     }
-    header{
-        height: 65px;
-    } 
-            
-            @media screen and (max-width: 600px){
-                .topnav a{
-                    float: none;
-                    width: 100%;
-                }
-            }
-          
-           
             #imgfig{
                 display: flex;
             }
@@ -35,62 +23,6 @@
             border-radius: 50%;
            }
            
-           #steps{
-            /* width: 300px; */
-            height: 100px;
-            border: 1px solid f24572;
-            padding: 50px;
-            margin: 20px;
-            display: inline-flex;
-            font-size: 18px;
-           }
-           #logo{
-            float: left;
-            margin-left: 15px;
-           }
-           #logoname{
-            color: #f24572;
-           }
-           body{
-            margin: 0px;
-           }
-           @media(max-width:700px){
-            .main{
-                text-align: center;
-            }
-            .index{
-                flex-direction: column;
-            }
-            nav ul{
-                flex-direction: column;
-                
-            }
-           }
-       
-
-            header, nav, ul{
-                display: flex;
-            }
-            nav{
-                margin-left: 2em;
-            }
-            ul{
-                list-style: none;
-            }
-            
-            #topDiv{
-                height: 20px;
-                width: 100%;
-                background-color: #f24572;
-                text-align: center;
-                color: white;
-            }
-            #footDiv{
-                height: 50px;
-                width: 100%;
-                text-align: center;
-                font-size: 25px;
-            }
               figure{
               height: 100%;
               width: 100%;
@@ -111,29 +43,7 @@
            figcaption>b{
             font-size: 30px;
            }
-           nav>ul>li{
-                /* margin: 0.8em; */
-                font-size: 23px;
-                padding:14px 70px ;
-            }
-           .breed-list{
-                display: none;
-                 flex-direction: column; 
-                 width: 60px; 
-                background: #fff;
-                 z-index: 999; 
-                position: relative;
-                left: -18px;
-            }
-            #breeds:hover .breed-list{
-                display: flex;
-                flex-direction: column;
-            }
-            .breed-list>li{
-                padding: 10px;
-                margin-left: -38px;
-                font-size: 20px;
-            }
+          
         </style>
 </head>
 <body>
@@ -141,37 +51,38 @@
             CATZONE
     </div>
 <header>
-    <img src="../Images/logo.webp" alt="" width="100" height="100">   
+    <img src="Images/logo.webp" alt="" width="100" height="100">   
     <nav>
         <ul>
-            <li> <a href="#">Home</a></li>
-            <li id="breeds">Breeds<a href="#"></a>
+            <li> <a class="clrchng" href="index.html">Home</a></li>
+            <li class="clrchng" id="breeds">Breeds<a href="#"></a>
                 <ul class="breed-list"> 
                     <li><a href="persian.html">Persian</a></li>
                     <li><a href="bengal.html">Bengal</a></li>
                     <li><a href="spannish.html">Spannish</a></li>
-                    <li><a href="ragdoll.html">Rangdoll</a></li>
-                    <li><a href="britishshorthair.html">British Shorthair</a></li>
+                    <li><a href="ragdoll.html">Ragdoll</a></li>
+                    <li><a href="britishshorthair.html">Shorthair</a></li>
                 </ul>
             </li>
-            
-            <li>Contact Us<a href="#"></a></li>
+            <li><a class="styl clrchng"href="contactus.html">Contact Us</a></li>
+           
         </ul>
     </nav>
+    <link rel="stylesheet" href="style.css">
 </header>
 <hr>
    <section>
     <div id="mainSec">
-      <h1>British Shorthair Cat</h1>
+      <h1>Bengal Cat</h1>
         <figure>
-            <img src="../Images/Short_hairs.webp" alt="PersianCat">
+            <img src="Images/bengal-cat.jpeg" alt="BengalCat">
             <figcaption>
                 <b>
-                    Your Search for a Loving Persian Kitten Ends Here !
+                    Your Search for a Loving Bengal Kitten Ends Here !
                 </b> 
                 <br>
                 <p>
-                    There are many cat loving people like you who want to find a healthy pure breed Persian Cat near you but are not able to connect with good ethical Persian Cat breeders and reliable online platforms.
+                    There are many cat loving people like you who want to find a healthy pure breed Bengal Cat near you but are not able to connect with good ethical Persian Cat breeders and reliable online platforms.
                 </p>
                 <p>
                     CATZONE is India’s most trusted online cat marketplace. Our team of dedicated cat experts is available to answer all your questions and help you find the best Persian kittens available nationwide- so that you can sit back relax and wait for your furry friend to come home.

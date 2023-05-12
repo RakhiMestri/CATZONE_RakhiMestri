@@ -1,0 +1,103 @@
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* top division for all pages */
+#topDiv{
+    height: 20px;
+    width: 100%;
+    background-color: #f24572;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#footDiv{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+header{
+    height: 65px;
+}   
+
+       
+      
+       #logo{
+        float: left;
+        margin-left: 15px;
+       }
+       #logoname{
+        color: #f24572;
+       }
+       
+       
+        header, nav, ul{
+            display: flex;
+        }
+        nav{
+            margin-left: 2em;
+        }
+        ul{
+            list-style: none;
+            /* text-decoration: none; */
+        }
+        nav>ul>li{
+            /* margin: 0.8em; */
+            font-size: 23px;
+            padding:14px 70px ;
+           
+        }
+
+        @media screen and (max-width: 600px)
+    {
+                .topnav a
+                {
+                    float: none;
+                    width: 100%;
+                }
+    } 
+    @media(max-width:700px){
+            .main{
+                text-align: center;
+            }
+            .index{
+                flex-direction: column;
+            }
+            nav ul{
+                flex-direction: column;
+                
+            }
+           }
+
+           body{
+            margin: 0px;
+           }
+
+           .breed-list{
+            display: none;
+             flex-direction: column; 
+             width: 60px; 
+            background: #fff;
+             z-index: 999; 
+            position: relative;
+            left: -18px;
+        }
+        #breeds:hover .breed-list{
+            display: flex;
+            flex-direction: column;
+        }
+        .breed-list>li{
+            padding: 10px;
+            margin-left: -38px;
+            font-size: 20px;
+        }
+        .clrchng:hover{
+            color: #f24572;
+            text-decoration: underline;
+           }
