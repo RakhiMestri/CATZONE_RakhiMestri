@@ -4,13 +4,15 @@ let contactNode=$('#contactno');
 let errorNode2=$('#error2');
 let mailNode=$('#mailId');
 let errorNode3=$('#error3');
+let msgNode=$('#message');
+let errorNode4=$('#error4');
 
 
 $(function(){
     nameNode.blur(()=>validate1());
     contactNode.blur(()=>validate2());
     mailNode.blur(()=>validate3());
-  
+    msgNode.blur(()=>validate4());
 
     $('#regForm').submit(()=>validateForm());
 });
@@ -77,6 +79,19 @@ function validate3(){
         return true;
     }
 }
+function validate4(){
+    errorNode4.text("");
+    let msg=msgNode.val();
+    msgNode.css({border:"2px red solid"});
+    if(msg==""){
+        errorNode4.text("Message field is required");
+        return false;
+    }
+    else{
+        msgNode.css({border:"2px green solid"});
+        return true;
+    }
+}
 
 
 let nodeArray=[nameNode,mailNode,contactNode];
@@ -93,5 +108,16 @@ function validateForm(){
             }
         }
    
-    return (flag1 && flag2  && flag3)
+    let resvar = flag1 && flag2  && flag3;
+    if(resvar!=true)
+    {
+        window.alert("Please fill all fields.");
+    }
+    else{
+        function ShowAlert(){
+            alert("Hey, Your message send successfully to our team.");
+        }
+        return (flag1 && flag2  && flag3)
+    }
+    
 }
