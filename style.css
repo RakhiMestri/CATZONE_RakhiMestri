@@ -1,6 +1,7 @@
 
 
 a{
+    text-shadow: 1px 1px;
     text-decoration: none;
     color: black;
 }
@@ -95,7 +96,9 @@ header{
         .breed-list>li{
             padding: 10px;
             margin-left: -38px;
-            font-size: 20px;
+            font-size: 20px;           
+            
+
         }
         .clrchng:hover{
             color: #f24572;
